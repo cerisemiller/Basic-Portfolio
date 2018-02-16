@@ -17,7 +17,7 @@
     border: 1px solid red;
   }
   body {
-    background-color: blue;
+    background-color: plum;
   }
   
   
@@ -39,4 +39,7 @@
   .bdr-red {
     border: solid red
   }
+   #github {
+     background: white
+   }
   
