@@ -3,32 +3,63 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Meet Cerise</title>
+    <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+
 </head>
+
 <body>
-    <div>Cerise Miller</h1>
-        <div class="wrapper">
-                <nav class="nav">
-                  <div><a href="" class="button">index</a></div>
-                  <div>contact</div>
-                  <div>portfolio</div>
-                </nav>
-                <div class="content">
-                    <img src="image" />
-                  <article><href="" class="block">inline</a><span>jjnjcsdn</span> blk hbj hjd hjbh huvbh hbjhj ghvh jhb b bsjk hjlbd</article>
-                </div>
-                </div>
-                    
-                
-                <br><br>
-                
-                <nav class="nav">
-                        <div><a href="" class="bgc-yellow pt-6 pr-12 pb-6 pl-12 bdr-red">index</a></div>
-                        <div>contact</div>
-                        <div>portfolio</div>
-                    </nav>
+<div class="content">
+
+    <!-- navigation bar -->
+    <nav class="container" id="header">
+
+        <div><h1 id="name">Cerise N. Miller</h1></div>
+
+        <div id="toolbar">
+            <a href="./index.html" id=index>About</a>
+            <a href="./portfolio.html" id=portfolio>Portfolio</a>
+            <a href="./contact.html" id=contact>Contact</a>
+       </div>            
+
+    </nav>
+
+    <!-- content -->
+    <div class="container" id="main-container">
+
+        <form action="./action_page.php" method="post">
+                <label for="name">Name</label><br />
+                <input id="name" class="input" placeholder="John Smith" name="name" type="text" value="" size="30" /><br />
+                <br>
+                <label for="email">Email</label><br />
+                <input id="name" class="input" placeholder="example@gmail.com" name="name" type="text" value="" size="30" /><br />
+                <br>
+                <label for="message">Message</label><br />
+                <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                <br>
+                <input type="submit" id="mySubmit" value="Submit">
+          </form>
+
+
+        <aside class="aside" id="connect">
+            <h2>Connect with Me</h2>
+            <a href="https://github.com/cerisemiller"><img id="github" src="./assets/images/github.svg"></img></a>
+            <a href="https://www.linkedin.com/in/cerisemiller/"><img id="linkedin" src="./assets/images/linkedin.svg"></img></a>
+            <a href="https://stackexchange.com/users/12846109/cerise-miller"><img id="stackoverflow" src="./assets/images/stackoverflow.svg"></img></a>
+        </aside>
+   
+    </div>
+
+    <div class="push"></div>
+</div>
+    <!-- footer -->
+    <footer>
+        <div class="footer">Copyright &copy; 2018 Cerise Miller</div>
+    </footer>
+
 </body>
 </html>

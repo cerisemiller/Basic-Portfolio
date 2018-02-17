@@ -3,36 +3,55 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>></title>
-    <title>Student Bio index</title>
+    <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+
 </head>
+
 <body>
+<div class="content">
 
     <!-- navigation bar -->
-    <nav class="nav-bar">
-        <div><h1>Cerise N Miller</h1></div>
-        <div><a href="./index.html">About</a></div>
-        <div><a href="./portfolio.html">Portfolio</a></div>
-        <div><a href="./contact.html">Contact</a></div>
+    <nav class="container" id="header">
+
+        <div><h1 id="name">Cerise N. Miller</h1></div>
+
+        <div id="toolbar">
+            <a href="./index.html" id=index>About</a>
+            <a href="./portfolio.html" id=portfolio>Portfolio</a>
+            <a href="./contact.html" id=contact>Contact</a>
+       </div>            
+
     </nav>
 
     <!-- content -->
-    <section>
-        <h2>About Me</h2>
-        <div><img id="headshot" src="./assets/images/headshot.jpg"></div>
-        <div><p id="bio-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi distinctio iusto quam deserunt iure. Earum voluptas ex commodi ullam, repellendus facilis iure fugiat quas illo tempore adipisci, cupiditate repudiandae excepturi.</p></div>
-    </section>
+    <div class="container" id="main-container">
 
-    <aside>
-        <h2>Connect with Me</h2>
-        <div><img id="github" src="./assets/images/GitHub-Mark-120px-plus.png"></div>
-        <div><img id="linkedin" src="./assets/images/linkedin logo.png"></div>
-    </aside>
+        <section id="main-section">
+            <h2>About Me</h2>
+            <img id="headshot" src="./assets/images/headshot.jpg">
+            <p id="bio-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi distinctio iusto quam deserunt iure. Earum voluptas ex commodi ullam, repellendus facilis iure fugiat quas illo tempore adipisci, cupiditate repudiandae excepturi.</p>
+        </section>
+
+        <aside class="aside" id="connect">
+            <h2>Connect with Me</h2>
+            <a href="https://github.com/cerisemiller"><img id="github" src="./assets/images/github.svg"></img></a>
+            <a href="https://www.linkedin.com/in/cerisemiller/"><img id="linkedin" src="./assets/images/linkedin.svg"></img></a>
+            <a href="https://stackexchange.com/users/12846109/cerise-miller"><img id="stackoverflow" src="./assets/images/stackoverflow.svg"></img></a>
+        </aside>
    
+    </div>
+
+    <div class="push"></div>
+</div>
     <!-- footer -->
+    <footer>
+        <div class="footer">Copyright &copy; 2018 Cerise Miller</div>
+    </footer>
 
 </body>
 </html>
